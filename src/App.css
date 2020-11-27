@@ -1,5 +1,10 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  padding: 30px;
 }
 
 .App-logo {
@@ -35,4 +40,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App__input {
+  /* text-align: right; */
+  direction: rtl;
+}
+
+.App form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 40px;
+}
+
+.App form label {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.App form input {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.App form button {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.App table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.App table td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.App table tr:nth-child(even) {
+  background-color: #dddddd;
 }
